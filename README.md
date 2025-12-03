@@ -6,7 +6,7 @@ PowerShell is a cross-platform command-line shell and scripting language develop
 
 ### [*Step 1: Get-Help*]
 
-<img>https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2001.png</img>
+<picture>https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2001.png</picture>
 
 Press enter or click to view image in full size
 
