@@ -1,3 +1,3 @@
-[![Watch the video](https://img.youtube.com/vi/TWdJQjiDUWU/maxresdefault.jpg)](https://youtu.be/TWdJQjiDUWU)
+[![Watch the video](https://img.youtube.com/vi/kFy9n-873-0/maxresdefault.jpg)](https://youtu.be/kFy9n-873-0)
 
-### [Project 56 - Exploiting Server Side Web Vulnerabilities w/ Gobuster!](https://youtu.be/TWdJQjiDUWU)
+### [ Project 52 - Exploring OWASP ZAP Web Application Scanning Techniques ](https://youtu.be/kFy9n-873-0)
