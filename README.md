@@ -1,6 +1,6 @@
 ### Click Header Image or Project Title to Watch The Video
 
-[![Watch the video](https://img.youtube.com/vi/sslRwRCRm0w/maxresdefault.jpg)](https://www.youtube.com/watch?v=sslRwRCRm0w)
+[![Watch the video](https://img.youtube.com/vi/sslRwRCRm0w/0.jpg)](https://www.youtube.com/watch?v=sslRwRCRm0w)
 
 ### [Project 03 - Active Recon with NMAP](https://youtu.be/sslRwRCRm0w)
 
