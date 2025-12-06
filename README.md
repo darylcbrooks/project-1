@@ -1,4 +1,4 @@
-[![Watch the video](https://img.youtube.com/vi/doYAROHx1gg/maxresdefault.jpg)](https://youtu.be/doYAROHx1gg)
+[![Watch the video](https://img.youtube.com/vi/doYAROHx1gg/0.jpg)](https://www.youtube.com/watch?v=doYAROHx1gg)
 
 ### [Project 02 - Navigating with the Linux & Windows Command Line Interface (CLI)](https://youtu.be/doYAROHx1gg)
 
