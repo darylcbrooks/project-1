@@ -1,10 +1,6 @@
-<object width="425" height="350">
-  <param name="movie" value="https://youtu.be/doYAROHx1gg" />
-  <param name="wmode" value="transparent" />
-  <embed src="https://youtu.be/doYAROHx1gg"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
+[![Watch the video](https://img.youtube.com/vi/doYAROHx1gg/maxresdefault.jpg)](https://youtu.be/doYAROHx1gg)
+
+### [Project 02 - Navigating with the Linux & Windows Command Line Interface (CLI)](https://youtu.be/doYAROHx1gg)
 
 Welcome back! This is the official walkthrough of my second project covering some very basic commands to help tech professionals navigate both the Windows and Linux command line interfaces. While on the surface this topic may seem fundamental at best, its vital information to know as a Cybersecurity analyst. Whether we’re working as a blue team defense analyst or a red team penetration tester, we must know these commands and what it is that they do. If I’m conducting log analysis and see these commands used, then it will give me a better understanding of how a potential intruder made their way into our enterprise and what actions that may have taken next. On the other hand, if I’m conducting a penetration test, these basic commands will help me to enumerate the target host and look for directories to hide payloads in. Most of this project focuses on Linux based commands since most distributions of the operating systems heavily rely on extensive knowledge of its CLI vs Windows which relies more on its user friendly, point-and-click GUI. Nevertheless, both operating systems’ set of commands will be covered.
 
