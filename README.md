@@ -8,6 +8,8 @@ In project 3, I dive into ways ethical and malicious hackers can utilize the Nma
 
 ### [*Nmap TCP Scan*]
 
+![Image](https://github.com/darylcbrooks/project-1/blob/project-3/Project%202%20-%20Step%2024.png)
+
 Press enter or click to view image in full size
 
 Typing the command “nmap -sT <ip address/hostname>” performs a Nmap TCP scan. This will scan the target host for any open TCP ports. The TCP protocol establishes what is known as the “three-way handshake connection” with the initiating device sending a “SYN” packet, then the responding device sending back a “SYN-ACK” packet, and finally the first device in the sequence sending a “ACK” packet establishing the connection between the two. In the above example, the Nmap TCP Scan has been ran against a host named “skillsetlocal.com” (which is just my local loopback address). It returns notifying me that three open TCP ports has been found open: SSH (port 22), HTTP (port 80), and RDP (3389).
