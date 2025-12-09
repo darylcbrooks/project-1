@@ -98,8 +98,6 @@ The “w” command provides details about all logged in users including: curren
 
 ### [*Basic Windows Commands*]
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-2/Project%202%20-%20Step%2020.png)
-
 In order to open the Windows command prompt terminal, type “cmd” in the system tray’s search bar and the command prompt application should appear on the menu.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-2/Project%202%20-%20Step%2021.png)
