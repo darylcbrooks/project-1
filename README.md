@@ -8,6 +8,8 @@ Welcome back! This is the official walkthrough of my second project covering som
 
 ### [*Navigating Linux Directories*]
 
+![Image](https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2002.png)
+
 The “pwd” command allows users to see what their current working directory is. In the above example, I am currently in the “/home/kali” directory.
 
 
