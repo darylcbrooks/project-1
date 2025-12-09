@@ -10,23 +10,17 @@ PowerShell is a cross-platform command-line shell and scripting language develop
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2001.png)
 
-Press enter or click to view image in full size
-
 Open Powershell and type “Get-Help”. This command is used in conjunction with other commands to display instructions on how to use them.
 
 ### [*Step 2: Get-Command*]
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2002.png)
 
-Press enter or click to view image in full size
-
 Typing in and executing the “Get-Command” gives a full list of all possible Powershell commands. This is very helpful for technicians who may forget the exact syntax of commands or to know if they are unintentionally using a Linux based command and want to find out what the Windows variation of that is.
 
 ### [*Step 3: Get-Help -Name Process*]
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2003.png)
-
-Press enter or click to view image in full size
 
 Executing the “Get-Help -Name Process” command provides help for specific processes (replace “-Name Process” with actual process name). The above image displays an example of the output received when using this command.
 
@@ -68,8 +62,6 @@ Using the “Get-History” command returns back a list of all of the commands u
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2008.png)
 
-Press enter or click to view image in full size
-
 The “Get-Process” command will allow Powershell users to see a list of all running system services. This can help technicians verify that essential system services are running and/or cybersecurity analyst to find suspicious processes to further investigate.
 
 ### [*Step 9: Get-Location*]
@@ -88,8 +80,6 @@ To create a new file from the Powershell command line, use the “New-Item” co
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2011.png)
 
-Press enter or click to view image in full size
-
 In order to add content to existing files, use the “Set-Content” command with the name of the file and then set the “-value” parameter to whatever input to be added to the file. To add the sentence “Infosec rocks!” to the my newly created “TestFile.txt” document, I used the following command: Set-Content TestFile.txt -value “Infosec is awesome!”.
 
 ### [*Step 12: Viewing File Content*]
@@ -107,8 +97,6 @@ If a file needs to be deleted from the current working directory, use the “Rem
 ### [*Step 14: Verifying File Removal*]
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2014.png)
-
-Press enter or click to view image in full size
 
 There are several ways that we can verify the removal of a file (i.e. looking directly into the current working directory from the command line or File Explorer GUI), in my case, I decided to run the “Get-Content TestFile.txt” command again to see what would happen. As anticipated, I received the above error message indicating the TestFile.txt no longer exists to retrieve information from.
 
