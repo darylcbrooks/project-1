@@ -13,7 +13,7 @@ Telnet is a text-based network protocol that allows a user on one device to log 
 
 First things first, I'm restarting both the Telnet and SSH protocols to ensure they are in listening mode, making them fully accessible. To do this, I need root privileges without the inherent risks that come with using Kali's root account. The sudo utility allows me to do just that as long as I provide it with my account password.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-4/Project%205%20-%20Step%2002.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-4/Project%204%20-%20Step%2002.png)
 
 Next, I'm going to use the netstat -tuln command to list the running protocols and their state to verify that both Telnet and SSH are processing in a listening state. In the above image, both ports 22 (SSH) and 23 (Telnet) can be observed on the list with their state listed as "LISTEN."
 
