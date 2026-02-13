@@ -6,7 +6,7 @@
 
 Welcome back! This is the official walkthrough of my second project covering some very basic commands to help tech professionals navigate both the Windows and Linux command line interfaces. While on the surface this topic may seem fundamental at best, its vital information to know as a Cybersecurity analyst. Whether we’re working as a blue team defense analyst or a red team penetration tester, we must know these commands and what it is that they do. If I’m conducting log analysis and see these commands used, then it will give me a better understanding of how a potential intruder made their way into our enterprise and what actions that may have taken next. On the other hand, if I’m conducting a penetration test, these basic commands will help me to enumerate the target host and look for directories to hide payloads in. Most of this project focuses on Linux based commands since most distributions of the operating systems heavily rely on extensive knowledge of its CLI vs Windows which relies more on its user friendly, point-and-click GUI. Nevertheless, both operating systems’ set of commands will be covered.
 
-### [*Navigating Linux Directories*]
+### *Navigating Linux Directories*
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-2/Project%202%20-%20Step%2001.png)
 
@@ -16,7 +16,7 @@ The “pwd” command allows users to see what their current working directory i
 
 The “cd” command (short for change directory) is used to change to a different directory in the operating system. The proper format of the command is “cd <desired directory path>. In the image above, I’ve changed to the “/usr/bin” subdirectory and verified my current whereabouts by using the “pwd” command.
 
-### [*Viewing Directory Contents*]
+### *Viewing Directory Contents*
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-2/Project%202%20-%20Step%2003.png)
 
@@ -34,7 +34,7 @@ The “ls -lt” performs the same functions as the “ls -l” command but sort
 
 The “ls -lh” command behaves similarly to the last 2 commands mentioned with the exception that it returns the file sizes of the directory contents in a more human readable format. The highlighted portion of the image are the sizes of the respective files.
 
-### [*Shortcut Commands*]
+### *Shortcut Commands*
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-2/Project%202%20-%20Step%2007.png)
 
@@ -50,7 +50,7 @@ To verify that I am indeed back in my home directory, I use the “pwd” comman
 
 Many Linux distributions are capable of autocompleting a written command. To give the best example of how this can be used, in the above image I write and execute an incomplete command (cat /etc/pas) which of course fails to process. I then write the same command out again but this time I tap the Tab key which autocompletes the “cat /etc/passwd” command and successfully executes it. This in turn returns to me a listing of all the user accounts on the device.
 
-### [*Creating A New Linux Directory*]
+### *Creating A New Linux Directory*
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-2/Project%202%20-%20Step%2010.png)
 
@@ -64,7 +64,7 @@ In order to verify the creation of the new subdirectory, I use the “ls” comm
 
 In addition to the newly created subdirectory, we can also view all hidden files within my home directory by using the “ls -la” command. Observing the above image, Kali returns back a list of all the hidden files within my home directory. Hidden files can be easily identified by the “.” or period in front of the file name.
 
-### [*Switching To The Root Directory*]
+### *Switching To The Root Directory*
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-2/Project%202%20-%20Step%2013.png)
 
@@ -82,7 +82,7 @@ Changing subdirectories in the root directory works the same as any other. Simpl
 
 To verify that I’m in the /root/var directory, I use and execute the “pwd” command which confirms that I’m in the desired directory.
 
-### [*Miscellaneous Linux Commands*]
+### *Miscellaneous Linux Commands*
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-2/Project%202%20-%20Step%2017.png)
 
@@ -96,7 +96,7 @@ To view which user account is currently in use, the “whoami” command can be 
 
 The “w” command provides details about all logged in users including: current system time, system uptime, the number of logged in users, and system load averages. See the above image for visual details.
 
-### [*Basic Windows Commands*]
+### *Basic Windows Commands*
 
 In order to open the Windows command prompt terminal, type “cmd” in the system tray’s search bar and the command prompt application should appear on the menu.
 
@@ -120,7 +120,7 @@ To view which Windows user account is currently in use, the “echo %username%�
 
 
 
-### [*Conclusion*]
+### *Conclusion*
 
 This wraps up project 2! Even though this information may be very basic to some, I hope that was insightful to many others. You can watch the video walkthrough of this same lab by clicking the link above the walkthrough. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
 
