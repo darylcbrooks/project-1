@@ -6,7 +6,7 @@
 
 PowerShell is a cross-platform command-line shell and scripting language developed by Microsoft. It is designed for task automation and configuration management across various operating systems, including Windows, Linux, and macOS. Powershell is a vital tool in the realms of system administration and cybersecurity. In this project, I will be walking through several steps that cover some very basic but essential Powershell commands that every IT technician should know to efficiently complete everyday tasks.
 
-### [*Step 1: Get-Help*]
+### *Step 1: Get-Help*
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-1/Project%201%20-%20Step%2001.png)
 
