@@ -69,4 +69,4 @@ There are some noticeable differences with this command to read the pcap file, i
 
 ### Conclusion
 
-…And that brings me to the end of Project 4. The purpose of this project was to provide a clear example of why it's best practice to not only avoid using cleartext protocols but to disable them by default to harden a system's attack surface and also to display the advantage of using encrypted protocols as a secure alternative. You can watch the video walkthrough of this same project by clicking the link below. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
+…And that brings me to the end of Project 4. The purpose of this project was to provide a clear example of why it's best practice to not only avoid using cleartext protocols but to disable them by default to harden a system's attack surface and also to display the advantage of using encrypted protocols as a secure alternative. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
