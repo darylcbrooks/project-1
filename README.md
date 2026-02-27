@@ -163,11 +163,11 @@ Now what if I were to hypothesize that this webpage utilizes the LAMP stack (Lin
 
 Voilà! This file stores internal user information for Linux systems. The page returns a listing of user and service accounts; information no regular end user should have access to.
 
+![Image](https://github.com/darylcbrooks/project-1/blob/project-7/Project%207%20-%20Step%2026.png)
+
 Next, I attempt to enumerate backend directories. I choose the “Directory Traversal — Directories” menu option and modify the URL to:
 
 http://192.168.1.100/directory_traversal_2.php?directory=../../../../
-
-![Image](https://github.com/darylcbrooks/project-1/blob/project-7/Project%207%20-%20Step%2026.png)
 
 This reveals a full list of directories on the server. One can imagine the sensitive data that could be accessed with this vulnerability.
 
