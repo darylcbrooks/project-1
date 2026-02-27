@@ -86,7 +86,9 @@ The Document Object Model (DOM) is an API that represents how browsers render HT
 ## How it works
 
 These attacks occur by identifying a DOM source and a DOM sink.
+
 • A DOM source is typically user‑controlled input passed into a function by the application.
+
 • A DOM sink is the function that takes that data and executes it to modify HTML, enabling the XSS attack.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-7/Project%207%20-%20Step%2013.png)
