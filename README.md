@@ -159,9 +159,9 @@ Now what if I were to hypothesize that this webpage utilizes the LAMP stack (Lin
 
 "/etc/passwd"
 
-Voilà! This file stores internal user information for Linux systems. The page returns a listing of user and service accounts; information no regular end user should have access to.
-
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-7/Project%207%20-%20Step%2025.png)
+
+Voilà! This file stores internal user information for Linux systems. The page returns a listing of user and service accounts; information no regular end user should have access to.
 
 Next, I attempt to enumerate backend directories. I choose the “Directory Traversal — Directories” menu option and modify the URL to:
 
@@ -193,4 +193,12 @@ BOOYAH! We’ve got user and service account information at our fingertips once 
 
 ### Conclusion
 
-These are only a few examples of common web vulnerabilities to watch for when protecting a public‑facing asset. Some effective controls to reduce risk include web application firewall, input validation & sanitization and Identity & access management for internal resources. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
+These are only a few examples of common web vulnerabilities to watch for when protecting a public‑facing asset. Some effective controls to reduce risk include: 
+
+• Web application firewall 
+
+• Input validation & sanitization 
+
+• Identity & access management for internal resources 
+
+You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
