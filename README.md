@@ -74,9 +74,9 @@ Now I can see the full extent of the 112 packets captured by tcpdump. However, I
 
 When following the SSH packet stream, aside from references to the encryption algorithms in use, there is no human‑readable text. This clearly demonstrates how encrypted protocols like SSH are safer than cleartext ones like Telnet. Even if a malicious actor were to intercept my network traffic, they would not be able to read the contents of the packets. To save this packet stream only, I click “Save As…” at the bottom of the window and name the file key_exchange.pcapng.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2016.png)
-
 ### Capturing FTP Traffic w/ Wireshark
+
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2016.png)
 
 Now I want to capture and compare encrypted and unencrypted FTP traffic. To begin capturing unencrypted traffic, I click the blue fin (Start) button in the upper-left corner of the Wireshark window. Back in the terminal where I authenticated to another host using SSH, I type exit to terminate the connection. Next, I create a new file called ftp_test.txt and save the word “unencrypted” inside it using the command:
 echo "unencrypted" > ftp_test.txt
