@@ -9,35 +9,35 @@ Welcome to the walkthrough of my second packet analysis project. During my first
 
 Wireshark is the most popular free, open-source network protocol analyzer used to capture and interactively browse traffic on computer networks in real time. It acts as a “network x‑ray,” allowing users to troubleshoot network problems, analyze security issues, and inspect hundreds of protocols.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2001.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2002.png)
 
 To boot up Wireshark from the Kali CLI, I type and execute the sudo wireshark command and provide my account password. This grants the root-level privileges needed to launch the Wireshark GUI. From here, I begin capturing network traffic on the eth0 network interface (since it is the one in use) and click the blue fin icon in the upper-left corner of the window.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2002.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2003.png)
 
 Now I need to generate traffic for Wireshark to capture. To do so, I open a new command terminal in Kali and log into another host via the Telnet protocol (sudo telnet 192.168.1.102). After authenticating with the necessary credentials (username: root, password: toor), it appears that I’ve successfully established a Telnet session with the other host. I verify this by using the whoami command, which returns the user account I’m logged into "root."
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2003.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2004.png)
 
 This simple authentication should have generated enough traffic for analysis in Wireshark, so I type the exit command to end my Telnet session.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2004.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2005.png)
 
 Back in Wireshark, I locate and right‑click a Telnet packet (it should be clearly labeled “Telnet” under the Protocol column), choose the “Follow” option, and select “TCP Stream.”
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2005.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2006.png)
 
 Following the TCP stream associated with this Telnet packet allows me to see the data contained within it. Because Telnet is a cleartext protocol, much of what I see is readable English. Without having to look far, the highlighted portion of the image shows both the username (root) and password (toor) that were transmitted during authentication. Now imagine if a malicious actor had this same capability — they would have the means to authenticate into an internal system and potentially access or manipulate sensitive information, or even begin lateral movement within the network. This is why it is vitally important not only to avoid insecure protocols like Telnet, but also to disable them by default to harden your network infrastructure.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2006.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2007.png)
 
 Having found what I needed, I stop the packet capture by clicking the stop button (the red square) at the top of the window.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2007.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2008.png)
 
 As a security analyst, it’s always best practice to save any potential security findings from a packet capture session for further analysis. To do so, I go to the “File” menu at the top of the window and choose the “Save As…” option.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2008.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2009.png)
 
 The format should be set to either .pcap or .pcapng, which are the default file formats Wireshark reads. I decided to name the file telnet_packets to reflect its content.
 
@@ -45,7 +45,7 @@ The format should be set to either .pcap or .pcapng, which are the default file 
 
 What is tcpdump? It’s a command-line packet analyzer and network monitoring tool similar to TShark and Wireshark, used to capture, log, and inspect real-time network traffic.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2009.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2001.png)
 
 Typing and executing tcpdump --help in the Linux terminal brings up a menu that helps me familiarize myself with the various parameters available in tcpdump.
 
