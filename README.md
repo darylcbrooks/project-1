@@ -3,7 +3,7 @@
 
 ### [Project 08 - Packet Analysis pt 2: Network Traffic Monitoring with Wireshark & Tcpdump ](https://youtu.be/MkJYiIh7fLk)
 
-Welcome to the walkthrough of my second packet analysis project. During my first project on this subject matter, I demonstrated how the command-line–based packet analysis tool TShark could be used to capture and analyze network traffic for secure and insecure protocols (Walkthrough: Packet Analysis with TShark: Telnet vs. SSH 📡 | by Daryl Brooks | Feb 2026 | Medium). In this project, I’m going to demonstrate something similar, but this time using the tcpdump utility and TShark’s GUI-based cousin, Wireshark, to capture and analyze network traffic. Let’s get started:
+Welcome to the walkthrough of my second packet analysis project. During my first project on this subject matter, I demonstrated how the command-line–based packet analysis tool TShark could be used to capture and analyze network traffic for secure and insecure protocols (https://github.com/darylcbrooks/project-1/blob/project-4/README.md). In this project, I’m going to demonstrate something similar, but this time using the tcpdump utility and TShark’s GUI-based cousin, Wireshark, to capture and analyze network traffic. Let’s get started:
 
 ### Capturing Telnet Traffic w/ Wireshark
 
