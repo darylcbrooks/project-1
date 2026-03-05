@@ -7,7 +7,7 @@ While continuing my exploration with packet analysis, in this project I will be 
 
 ### Saving Nmap Output in Different Formats
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-10/Project%210%20-%20Step%2001.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-10/Project%2010%20-%20Step%2001.png)
 
 In my Kali command terminal, the first thing I need to do to ensure I have the proper privileges to execute all of the commands I’ll be using is to switch to the root account (command used: “sudo su” and my account password). This is usually ill‑advised due to the inherent risks associated with using the root account, but for the sake of demonstration I will be using it.
 
