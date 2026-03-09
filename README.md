@@ -47,14 +47,14 @@ Before moving on to Hping, there is one last Nmap scan type I want to cover. Nor
 
 Hping is a command‑line utility for assembling and analyzing TCP/IP packets. This packet‑crafting tool supports various protocols including TCP, UDP, and ICMP, and allows manipulation of multiple values in a TCP/IP header such as window size, packet size, and time‑to‑live (TTL). Among its many uses, Hping can be used for: 
 
-• Firewall testing
-• Advanced port scanning
-• Network testing using different protocols, TOS, and fragmentation
-• Manual Path MTU discovery
-• Advanced traceroute across all supported protocols
-• Remote OS fingerprinting
-• Remote uptime estimation
-• TCP/IP stack auditing
+* Firewall testing
+* Advanced port scanning
+* Network testing using different protocols, TOS, and fragmentation
+* Manual Path MTU discovery
+* Advanced traceroute across all supported protocols
+* Remote OS fingerprinting
+* Remote uptime estimation
+* TCP/IP stack auditing
 
 The latest version, Hping3, is scriptable, enabling penetration testers and programmers to write scripts for modifying and analyzing TCP/IP packets.
 
