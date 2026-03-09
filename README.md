@@ -91,12 +91,12 @@ Now that I'm logged in to the vulnerable host, I use an "ls" command to see what
 
 To initiate Linpeas, I simply type and execute the following command: "./linpeas.sh". One of the first things that we can see upon booting up Linpeas is its color-coded legend.
 
-• Red text with a yellow background tells me that there is a 95% chance of the existence of a privilege escalation vector
-• Red text tells me that I should look further into the finding
-• Light cyan tells me which users have access to a console
-• Blue text tells me which users don't have console access
-• Green text tells me common things such as usernames, groups, shell scripts, cron jobs, etc., which by themselves wouldn't mean much but, when aggregated with details of the other colored text, could provide better context for potential vulnerabilities
-• Light magenta tells me everywhere my username is listed
+* Red text with a yellow background tells me that there is a 95% chance of the existence of a privilege escalation vector
+* Red text tells me that I should look further into the finding
+* Light cyan tells me which users have access to a console
+* Blue text tells me which users don't have console access
+* Green text tells me common things such as usernames, groups, shell scripts, cron jobs, etc., which by themselves wouldn't mean much but, when aggregated with details of the other colored text, could provide better context for potential vulnerabilities
+* Light magenta tells me everywhere my username is listed
 
 Unfortunately, I wasn't able to find any details to correlate with my OpenVAS scanning results. I would probably need to use another GUI-based scanning tool (such as Nessus) to compare the results to; however, I don't want to drift too far away from the scope of this project. That sounds like a great idea for a future project though… 🤔
 
