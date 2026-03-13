@@ -17,7 +17,7 @@ The first thing I need to do is switch from my unprivileged Linux account to the
 
 Now that I have the required privileges, I run the following command, which uses a PHP static code analyzer against the “lfi.php” file:
 
-“~/vendor/bin/phpcs --extensions=php,inc,lib,module,info --standard=~/vendor/pheromone/phpcs-security-audit/example_base_ruleset.xml ~/examples/lfi.php ”.
+“~/vendor/bin/phpcs --extensions=php,inc,lib,module,info --standard=~/vendor/pheromone/phpcs-security-audit/example_base_ruleset.xml ~/examples/lfi.php”.
 
 Static analysis is the review of inactive code to identify vulnerabilities or errors. This analysis tool uses an embedded ruleset to scan lfi.php for the presence of any file inclusion vulnerabilities and report its findings. In the above image, notice the two warnings we get: “possible Remote File Inclusion detected”.
 
