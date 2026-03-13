@@ -81,6 +81,12 @@ Now I want to take the modified version of gTable.php from the “mitigation” 
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-15/Project%2015%20-%20Step%2015.png)
 
-To verify that the vulnerability has been remediated, I run a custom Python script to test whether an LFI attack can be performed against any file on my system (~/exploits/auto-exploit.py). The script returns a message stating that the LFI attempt failed, meaning my remediation was successful!
+To verify that the vulnerability has been remediated, I run a custom Python script to test whether an LFI attack can be performed against any file on my system (~/exploits/auto-exploit.py).
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-15/Project%2015%20-%20Step%2016.png)
+
+The script returns a message stating that the LFI attempt failed, meaning my remediation was successful!
+
+### Conclusion
+
+The purpose of this project was to convey the dangers of file inclusion attacks, demonstrate how they work, and show the remediation measures that can be taken when they are found. Automate vulnerability analysis where possible, but always be prepared to verify findings manually and/or with secondary tools. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
