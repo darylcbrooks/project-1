@@ -17,7 +17,7 @@ The first thing I need to do is switch from my unprivileged Linux account to the
 
 Now that I have the required privileges, I run the following command, which uses a PHP static code analyzer against the “lfi.php” file:
 
-“(~)/vendor/bin/phpcs --extensions=php,inc,lib,module,info --standard=~/vendor/pheromone/phpcs-security-audit/example_base_ruleset.xml ~/examples/lfi.php”.
+“(tilde)/vendor/bin/phpcs --extensions=php,inc,lib,module,info --standard=~/vendor/pheromone/phpcs-security-audit/example_base_ruleset.xml ~/examples/lfi.php”.
 
 Static analysis is the review of inactive code to identify vulnerabilities or errors. This analysis tool uses an embedded ruleset to scan lfi.php for the presence of any file inclusion vulnerabilities and report its findings. In the above image, notice the two warnings we get: “possible Remote File Inclusion detected”.
 
@@ -35,7 +35,7 @@ Observe the bottom-center of the image above. There are 333 lines of code in thi
 
 Now I want to create a ruleset of my own to detect the presence of file inclusion vulnerabilities. Instead of writing one from scratch, I create a copy (lfi_only.xml) of the one used by the PHP static code analyzer to modify:
 
-“cp ~/vendor/pheromone/phpcs-security-audit/example_base_ruleset.xml ~/vendor/pheromone/phpcs-security-audit/lfi_only.xml”.
+“cp (tilde)/vendor/pheromone/phpcs-security-audit/example_base_ruleset.xml ~/vendor/pheromone/phpcs-security-audit/lfi_only.xml”.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-15/Project%2015%20-%20Step%2006.png)
 
@@ -53,7 +53,7 @@ I delete all the rules above “<rule ref=”Security.BadFunctions.EasyRFI”/>�
 
 Now I use the following command to execute the PHP static code analyzer again — this time with the modified ruleset (lfi_only) scanning an entire directory (/var/www/html/) for vulnerabilities:
 
-“~/vendor/bin/phpcs — extensions=php,inc,lib,module,info — standard=~/vendor/pheromone/phpcs-security-audit/lfi_only.xml /var/www/html/”
+“(tilde)/vendor/bin/phpcs — extensions=php,inc,lib,module,info — standard=~/vendor/pheromone/phpcs-security-audit/lfi_only.xml /var/www/html/”
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-15/Project%2015%20-%20Step%2009.png)
 
