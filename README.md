@@ -55,7 +55,7 @@ Similar to before, I navigate to the IPv4 tab of the menu that appears. This dis
 
 ### Verifying Potential Threat w/ Sguil
 
-Sguil is a GUI-based open-source network security monitoring and event-driven analysis tool. It differs from Wireshark by behaving more like a Security Information and Event Management (SIEM) tool and alert aggregation console, rather than a deep packet inspector.
+Sguil is a GUI-based open-source network security monitoring and event-driven analysis tool. It differs from Wireshark by behaving more like an Intrusion Detection System (IDS) and alert aggregation console, rather than a deep packet inspector.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-14/Project%2014%20-%20Step%2010.png)
 
@@ -73,6 +73,6 @@ Initially, the bottom pane doesn’t show much information. However, once I chec
 
 ### Conclusion
 
-Now, of course, in reality, most malware-related packets aren’t going to have such obvious naming conventions as the trojan did in this project. What I wanted to highlight is how a SIEM tool like Sguil can flag certain attributes in network traffic to alert analysts of potential anomalies. I also wanted to demonstrate how features of a packet-capturing tool like Wireshark can be used by analysts to detect network anomalies, such as multiple workstations attempting to connect to a specific external IP address over a given period.
+Now, of course, in reality, most malware-related packets aren’t going to have such obvious naming conventions as the trojan did in this project. What I wanted to highlight is how a IDS like Sguil can flag certain attributes in network traffic to alert analysts of potential anomalies. I also wanted to demonstrate how features of a packet-capturing tool like Wireshark can be used by analysts to detect network anomalies, such as multiple workstations attempting to connect to a specific external IP address over a given period.
 
 You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
