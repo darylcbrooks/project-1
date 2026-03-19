@@ -25,7 +25,7 @@ Note: Above the “No password set” message is another line that reads “Open
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2004.png)
 
-The next screen proves my theory wrong — but in a good way. The device actually appears to be a router! There should be plenty of network information available here. The first tab I visit is “System,” followed by “Administration.” Giving myself partial credit, I was at least half correct earlier: the router does allow SSH authentication and root user logins, but only with a password.
+The next screen proves my theory wrong — but in a good way. The device actually appears to be a router! There should be plenty of network information available here. The first tab I visit is “System,” followed by “Administration.” Giving myself partial credit, I was at least half correct earlier: the router does allow SSH authentication and root user logins, without requiring a password.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2005.png)
 
