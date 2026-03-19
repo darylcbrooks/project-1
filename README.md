@@ -190,7 +190,7 @@ I launch it using ./ci. A small GUI opens requesting an employee ID. Now I wonde
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2035.png)
 
-Back in the terminal using Shanna’s account, I have a list of employee IDs to my disposal. Which one should I use? The CEO’s of course! I copy the CEO’s ID, enter it into the CI application, and click “Check In.” The program confirms the check-in and welcomes Kailyn (the CEO). Although the CI app doesn’t have defined functionality for this project, it’s easy to imagine the level of access a CEO might have — possibly including sensitive financial and client data. If employee ID acts as the only form of non‑repudiation, any malicious actions taken with it could be attributed to the actual employee.
+Back in the terminal using Shanna’s account, I have a list of employee IDs at my disposal. Which one should I use? The CEO’s of course! I copy the CEO’s ID, enter it into the CI application, and click “Check In.” The program confirms the check-in and welcomes Kailyn (the CEO). Although the CI app doesn’t have defined functionality for this project, it’s easy to imagine the level of access a CEO might have — possibly including sensitive financial and client data. If employee ID acts as the only form of non‑repudiation, any malicious actions taken with it could be attributed to the actual employee.
 
 ### Conclusion
 
