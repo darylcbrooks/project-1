@@ -186,7 +186,7 @@ chmod +x ci
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2034.png)
 
-I launch it using ./ci. A small GUI opens requesting an employee ID. Now I wonder where can I find on of those? 🤔 OH YEAH! I know…
+I launch it using ./ci. A small GUI opens requesting an employee ID. Now I wonder where can I find one of those? 🤔 OH YEAH! I know…
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2035.png)
 
