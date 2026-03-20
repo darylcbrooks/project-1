@@ -5,13 +5,13 @@
 
 In this project, I put on my “black hat” and simulate a data breach of a fake company’s network by exploiting several vulnerabilities. My goal is to gain entry into the victim’s network, move laterally by pivoting to different internal hosts, and eventually access sensitive employee (or customer) information. Let’s get started!
 
-### Initial Host Discovery and Compromise
+## Initial Host Discovery and Compromise
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2001.png)
 
 Starting off, I’ve already gained access to a host that’s connected to the company’s internal network (IP address: 172.20.1.1), and I want to find other devices to pivot to. I conduct active reconnaissance by running an ARP scan (sudo arp-scan -l). This ARP scan allows me to see the MAC (physical) addresses and IP addresses associated with all running machines on the network. The returned output tells me that three other devices are currently running: 172.20.1.101, 172.20.1.102, and 172.20.1.103. I can see that 172.20.1.101 is running a virtual machine like mine (172.20.1.1), and that 172.20.1.102 is likely running a Windows‑based operating system. However, I cannot determine what’s running on 172.20.1.103. The ambiguity of this host piques my interest, so I'll begin my device enumeration there.
 
-### Enumerating The Details Of My First Targeted Host
+## Enumerating The Details Of My First Targeted Host
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2002.png)
 
@@ -41,7 +41,7 @@ Next, I see the use of gpg. GPG (GNU Privacy Guard) is a command-line tool for e
 
 At the end of the command, I see a Bourne shell reference (/bin/sh) followed by the string deRxAcF1!. This may be a symmetric encryption key used to decrypt the PCAP file. GPG supports both symmetric and asymmetric encryption, so if symmetric encryption is used, I may have found the “keys to the kingdom.” I save the string for future use.
 
-### Making A SSH Connection w/ The Target Host
+## Making A SSH Connection w/ The Target Host
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2008.png)
 
@@ -67,7 +67,7 @@ I then open a second terminal and download “dailytraffic.pcap.gpg” to my mac
 
 wget http://router:8080/dailytraffic.pcap.gpg
 
-### Decrypting The PCAP File
+## Decrypting The PCAP File
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2013.png)
 
@@ -86,7 +86,7 @@ A prompt appears requesting a passphrase. I enter the suspicious string from ear
 
 The prompt disappears, and running ls again shows the decrypted “dailytraffic.pcap” file.
 
-### Analyzing The Packet Capture for Vulnerabilities
+## Analyzing The Packet Capture for Vulnerabilities
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2017.png)
 
@@ -109,7 +109,7 @@ After finding a POST request, I right‑click it and follow the TCP stream.
 
 A new window displays the packet’s content. Instead of scrolling through the text, I search for the term “password.” Immediately, I’m taken to highlighted text showing login=admin and password=b3secure. These appear to be cleartext administrator login credentials—another example of why HTTP should not be used instead of HTTPS.
 
-### Authenticating To Another Device w/ The Found Credentials
+## Authenticating To Another Device w/ The Found Credentials
 
 Now that I have another set of credentials, I attempt to authenticate to the next device in my earlier list: 172.20.1.102.
 
@@ -123,7 +123,7 @@ I enter admin / b3secure and click “Sign In.”
 
 As expected, I successfully authenticate into Techcity’s VPN administrator panel. I could establish persistence by allowing remote access from any IP or blacklisting legitimate users, but I won’t do that here. Instead, I move on to the last IP address from my ARP scan: 172.20.1.101.
 
-### Accessing Techcity Employee Data
+## Accessing Techcity Employee Data
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-17/Project%2017%20-%20Step%2022.png)
 
@@ -192,7 +192,7 @@ I launch it using ./ci. A small GUI opens requesting an employee ID. Now I wonde
 
 Back in the terminal using Shanna’s account, I have a list of employee IDs at my disposal. Which one should I use? The CEO’s of course! I copy the CEO’s ID, enter it into the CI application, and click “Check In.” The program confirms the check-in and welcomes Kailyn (the CEO). Although the CI app doesn’t have defined functionality for this project, it’s easy to imagine the level of access a CEO might have — possibly including sensitive financial and client data. If employee ID acts as the only form of non‑repudiation, any malicious actions taken with it could be attributed to the actual employee.
 
-### Conclusion
+## Conclusion
 
 The purpose of this project was to demonstrate various attack vectors a malicious user could exploit to move laterally through a network, pivot to different systems, and access sensitive data. Defense-in-depth is critical when protecting corporate environments. Firewalls, strong password policies, and file-level encryption are just a few of the controls Techcity could implement to prevent future breaches.
 
