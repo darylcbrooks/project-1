@@ -176,10 +176,10 @@ One thing to note: although the ciphertext strings differ between Type 8 and Typ
 The purpose of this project was to demonstrate how the insecurity of a plaintext protocol such as TFTP can lead to a much larger data breach. Once an attacker gains a foothold in a network, they can pivot to additional devices, exploit vulnerabilities, and continue moving laterally until reaching the sensitive information they seek.
 
 Some key lessons learned from this project:
-• Disable insecure protocols to harden a system’s attack surface
-• Use strong encryption algorithms to protect stored credentials
-• Password‑protect privilege escalation vectors wherever possible
-• Enable strict account‑lockout mechanisms after a small number of failed login attempts
-• Enforce strong password policies with mandatory complexity requirements
+* Disable insecure protocols to harden a system’s attack surface
+* Use strong encryption algorithms to protect stored credentials
+* Password‑protect privilege escalation vectors wherever possible
+* Enable strict account‑lockout mechanisms after a small number of failed login attempts
+* Enforce strong password policies with mandatory complexity requirements
 
 You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
