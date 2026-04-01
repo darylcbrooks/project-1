@@ -127,11 +127,9 @@ Next, I verify that the hash value was correctly copied into the text file by ru
 With the hashing value stored in a text file, it’s time to let John rip! The following command initiates a brute‑force attack using the rockyou.txt wordlist:
 john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2027.png)
-
 Like most dictionary‑based brute‑force attacks, John compares commonly used password hashes against the target hash in an attempt to cause a collision and reveal the plaintext password. Once John completes the attack, I run john — show hash.txt to display the results. It appears that the cleartext password is “router”.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2028.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2027.png)
 
 I always recommend verifying results between multiple tools with similar capabilities to reduce the risk of false positives. To confirm the output, I’m going to use another popular password‑cracking tool: Hashcat. The following command is a bit more complex than John the Ripper’s but should yield similar results:
 hashcat -a 0 -m 500 hash.txt /usr/share/wordlists/rockyou.txt --show
@@ -140,35 +138,38 @@ Hashcat uses the same rockyou.txt wordlist, and I’ve added the — show option
 
 ## Using a Custom Python Script to Crack Cisco Type 7, 8, and 9 Passwords
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2029.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2028.png)
 
 Now that I’ve decrypted the $1$mERr$uPOU5aamVaETEvWzvDbvp. credential, I return to the configuration file to examine the other credential I need to decrypt (cat remote-config).
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2030.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2029.png)
 
 It appears that the remaining credential is a Type 7 password. These passwords use a legacy, weak, and reversible encryption method in Cisco IOS configuration files. With that in mind, let’s see if I can crack it.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2031.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2030.png)
 
 To decrypt the obfuscated password, I’m going to use a custom Python script. First, I switch to the brute‑force directory where the script is located (cd /brute-force). Running ls, I can see the ciscot7.py file that I’ll be using. I execute the following command, which specifies the version of Python installed (python3), the script (ciscot7.py), the decrypt instruction (-d), and the target string (-p 01150F165E1C07032D):
 python3 ciscot7.py -d -p 01150F165E1C07032D
 
 The results return a cleartext password of “firewall”.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2032.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2031.png)
 
 Now that I’ve cracked a simple Cisco Type 7 password, I want to try something stronger — Type 8 and Type 9 passwords. To access the hashes, I use cd / to switch to the root directory of the Kali root user. Once there, I run ls and see the hashes subdirectory. Entering it with cd hashes, I run ls again to confirm the files I need are present: type_8.hash and type_9.hash.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2033.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2032.png)
 
 I use Hashcat again to conduct the brute‑force attack. To decrypt type_8.hash, I execute:
 hashcat -m 9200 -a 0 /hashes/type_8.hash /usr/share/wordlists/rockyou.txt --show
 This yields the cleartext password "cisco".
 
+![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2033.png)
 
 I then perform the same process for type_9.hash:
 hashcat -m 9300 -a 0 --force /hashes/type_9.hash /usr/share/wordlists/rockyou.txt --show
 Again, the cleartext password "cisco" is returned.
+
+One thing to note: although the ciphertext strings differ between Type 8 and Type 9 hashes — indicated by the $8 and $9 prefixes — the decrypted output is identical.
 
 ## Conclusion
 
