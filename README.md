@@ -105,11 +105,11 @@ Even if legitimate users check the router’s configuration, all they will see i
 
 ## Using John the Ripper and Hashcat to Crack MD5 Passwords
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2024.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2018.png)
 
 In case it isn’t clear which credentials I’m referring to, they are the two shown in the image above.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2018.png)
+![Image](https://github.com/darylcbrooks/project-1/blob/project-20/Project%2020%20-%20Step%2024.png)
 
 I execute the exit command twice to leave privileged EXEC mode and fully log out of the router. In this next phase of the project, I’m going to use multiple tools to decrypt the MD5‑hashed credential I found. The first tool I’ll use is John the Ripper, a password security auditing and recovery tool that comes pre‑installed on Kali Linux.
 
