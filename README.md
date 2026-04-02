@@ -130,7 +130,7 @@ Once again, everything within the tags is displayed (“John > Doe”).
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-22/Project%2022%20-%20Step%2017.png)
 
-Returning to the main XML page, I enter the following syntax, which — if parsed — should enumerate the user and service accounts on the backend server by reading the passwd file as the root user: “< ?xml version=”1.0"? > < !DOCTYPE root [<!ENTITY test SYSTEM ‘file:///etc/passwd’>] >< root >&test;< /root >”. I then click the “Send” button.
+Returning to the main XML page, I enter the following syntax, which — if parsed — should enumerate the user and service accounts on the backend server by reading the passwd file as the root user: “< ?xml version=”1.0"? > < !DOCTYPE root [< !ENTITY test SYSTEM ‘file:///etc/passwd’ >] >< root >&test;< /root >”. I then click the “Send” button.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-22/Project%2022%20-%20Step%2018.png)
 
