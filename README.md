@@ -98,7 +98,7 @@ Now I’ll move on to exploiting and mitigating XML‑related vulnerabilities. B
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-22/Project%2022%20-%20Step%2011.png)
 
-To access the part of the mock website where XML parsing is demonstrated, I click “XML” on the far left. On the next page, I paste the following syntax into the textbox and click “Send”: “<test>testing</test>”.
+To access the part of the mock website where XML parsing is demonstrated, I click “XML” on the far left. On the next page, I paste the following syntax into the textbox and click “Send”: “</test>testing</test>”.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-22/Project%2022%20-%20Step%2012.png)
 
@@ -122,7 +122,7 @@ With this understanding, I attempt an XML External Entity (XXE) attack — an at
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-22/Project%2022%20-%20Step%2015.png)
 
-Before launching the attack, I run a final test to confirm the parser is functioning as expected. I enter: “<author>John > Doe</author>”.
+Before launching the attack, I run a final test to confirm the parser is functioning as expected. I enter: “</author>John > Doe</author>”.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-22/Project%2022%20-%20Step%2016.png)
 
