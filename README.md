@@ -5,7 +5,7 @@
 
 This will be another project focused on packet analysis. This time, I will start things off by using a command-line tool known as Zeek to analyze network traffic. To finish things off, I’ll use Wireshark again to investigate suspicious traffic patterns and attempt to identify the presence of any malicious payloads.
 
-### Using Zeek to Hunt for Hidden Threats in PCAP files
+## Using Zeek to Hunt for Hidden Threats in PCAP files
 
 Zeek is a free and open-source network analysis framework used to provide deep insight into network activity by generating detailed, high‑fidelity transaction logs of network data. Let’s jump into seeing how these logs are generated.
 
@@ -48,7 +48,7 @@ zeek-cut < http.log -d ts id.orig_h id.orig_p id.resp_h id.resp_p duration metho
 
 Observe the third entry in the image above — there appears to be an executable file named supercalc.exe that was interacted with at IP address 206.188.192.204. My next step is to investigate this further using a few additional tools to determine whether there is any cause for concern.
 
-### Investigating The PCAP File w/Wireshark
+## Investigating The PCAP File w/Wireshark
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-16/Project%2016%20-%20Step%2007.png)
 
@@ -68,7 +68,7 @@ Next, I click the File menu at the top of the Wireshark window, choose Export Ob
 
 From the list of entries that appear, we can see that supercalc.exe is second on the list. I click on the entry and then click Save to store the suspicious file on my local Desktop.
 
-### Uncovering The Executable File’s True Nature Using VirusTotal
+## Uncovering The Executable File’s True Nature Using VirusTotal
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-16/Project%2016%20-%20Step%2011.png)
 
@@ -86,6 +86,6 @@ In a matter of seconds, VirusTotal returns sixty red flags from various vendors 
 
 There are other tabs adjacent to the initial Detection tab that provide more details about the file, but the most interesting information is under the Behavior tab. This tab gathers TTPs (Tactics, Techniques, and Procedures) from the MITRE ATT&CK framework — a structured knowledge base of adversarial behaviors that maps the “why,” “how,” and specific actions used during cyberattacks. These details are especially important to senior analysts and incident response specialists once the case is escalated to them.
 
-### Conclusion
+## Conclusion
 
 In this project, I demonstrated how the Zeek tool can be used to break packet captures into smaller log files and how analysts can narrow their attention to specific areas of focus. I also showed how tools such as Wireshark and VirusTotal can be used to verify any suspicious findings during initial analysis. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
