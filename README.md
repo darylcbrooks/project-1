@@ -5,7 +5,7 @@
 
 Welcome to the walkthrough of my second packet analysis project. During my first project on this subject matter, I demonstrated how the command-line–based packet analysis tool TShark could be used to capture and analyze network traffic for secure and insecure protocols (https://github.com/darylcbrooks/project-1/blob/project-4/README.md). In this project, I’m going to demonstrate something similar, but this time using the tcpdump utility and TShark’s GUI-based cousin, Wireshark, to capture and analyze network traffic. Let’s get started:
 
-### Capturing Telnet Traffic w/ Wireshark
+## Capturing Telnet Traffic w/ Wireshark
 
 Wireshark is the most popular free, open-source network protocol analyzer used to capture and interactively browse traffic on computer networks in real time. It acts as a “network x‑ray,” allowing users to troubleshoot network problems, analyze security issues, and inspect hundreds of protocols.
 
@@ -41,7 +41,7 @@ As a security analyst, it’s always best practice to save any potential securit
 
 The format should be set to either .pcap or .pcapng, which are the default file formats Wireshark reads. I decided to name the file telnet_packets to reflect its content.
 
-### Capturing SSH Traffic w/ TcpDump
+## Capturing SSH Traffic w/ TcpDump
 
 What is tcpdump? It’s a command-line packet analyzer and network monitoring tool similar to TShark and Wireshark, used to capture, log, and inspect real-time network traffic.
 
@@ -74,7 +74,7 @@ Now I can see the full extent of the 112 packets captured by tcpdump. However, I
 
 When following the SSH packet stream, aside from references to the encryption algorithms in use, there is no human‑readable text. This clearly demonstrates how encrypted protocols like SSH are safer than cleartext ones like Telnet. Even if a malicious actor were to intercept my network traffic, they would not be able to read the contents of the packets. To save this packet stream only, I click “Save As…” at the bottom of the window and name the file key_exchange.pcapng.
 
-### Capturing FTP Traffic w/ Wireshark
+## Capturing FTP Traffic w/ Wireshark
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2016.png)
 
@@ -107,7 +107,7 @@ Similar to what I saw with the Telnet stream, the cleartext credentials are imme
 
 Before moving on, I save the FTP packet capture as ftp_packets.pcapng in my home directory. Now let’s see what encrypted FTP traffic looks like.
 
-### Capturing SFTP Traffic w/ Wireshark
+## Capturing SFTP Traffic w/ Wireshark
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-8/Project%208%20-%20Step%2022.png)
 
@@ -139,6 +139,6 @@ As expected, there is no cleartext output. No one, including myself, can see the
 
 To finish things off, I save this packet capture as sftp_packets.pcapng in my home directory.
 
-### Conclusion
+## Conclusion
 
 In this project, I used both the command-line–based tcpdump tool and the GUI-based Wireshark to demonstrate the differences between encrypted and unencrypted network traffic. Encrypted protocols such as SSH provide transport‑layer protection to data in transit and ensure the confidentiality of transmitted packets. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
