@@ -5,7 +5,7 @@
 
 Welcome to my first of many Metasploit Framework (MSF) projects! Though I won’t be diving very deep into the many layers and functionalities of the MSF, I will be demonstrating how to execute a simple exploitation against a found vulnerability. What exactly is the Metasploit Framework? It’s a powerful and versatile tool utilized by ethical hackers and penetration testers to identify, exploit, and mitigate vulnerabilities in systems. Let’s see how it works:
 
-### Active Reconnaissance w/ Nmap
+## Active Reconnaissance w/ Nmap
 
 Before launching the MSF, I must first conduct what is known as active recon against a target host. As indicated, there are two different reconnaissance types: passive and active. Both involve gathering information about a potential target but take different approaches. Passive recon consists of techniques that are more subtle and less detectable, such as using a search engine to gather information about the company hosting the targeted network. This can help with deducing details such as email extensions or potential passwords internal users may be inclined to use.
 
@@ -27,7 +27,7 @@ I receive a 203 return code, which notifies me of a successful login. Our first 
 
 While I’m in here, let’s have a look around. I use the “ls -al” command to list out all files (including hidden ones) present in the current working directory. There doesn’t appear to be anything here to see, so I terminate my FTP session with the target host by typing the “bye” command.
 
-### Exploiting Service Version Vulnerabilities w/ Metasploit
+## Exploiting Service Version Vulnerabilities w/ Metasploit
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-12/Project%2012%20-%20Step%2005.png)
 
@@ -79,6 +79,6 @@ Back in the msfconsole, I can view all of my active sessions by executing the �
 
 Whenever I want to return to an active session, I simply execute “sessions” and specify the session ID with the “-i” option and the session number after it. In this instance, I enter “sessions -i 1” since I only have one active session available, and 1 is the session ID assigned to it. Once I’m back in my session with the target host, I execute the “whoami” command again to verify everything is still working properly.
 
-### Conclusion
+## Conclusion
 
 This was a very basic walkthrough of how to enumerate system vulnerabilities with Nmap and exploit those vulnerabilities with the Metasploit Framework. In future projects, I will dive deeper into how we can use both of these tools to enumerate even more details and find additional ways into insecure systems. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
