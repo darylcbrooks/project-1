@@ -7,7 +7,7 @@
 In this project, I will demonstrate the importance of using secure variations of protocols instead of plaintext. In this instance, the output of two connection-based protocols will be compared: Telnet and SSH. To view the output of traffic sent over a network by both protocols, the Tshark packet analysis tool will be used.
 Telnet is a text-based network protocol that allows a user on one device to log into another device that is part of the same network. On the other hand, SSH is a network protocol that creates a secure, encrypted connection between two devices over an unsecured network, such as the internet. Let's dive in (pun fully intended):
 
-### Restarting Telnet and SSH
+## Restarting Telnet and SSH
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-4/Project%204%20-%20Step%2001.png)
 
@@ -17,7 +17,7 @@ First things first, I'm restarting both the Telnet and SSH protocols to ensure t
 
 Next, I'm going to use the netstat -tuln command to list the running protocols and their state to verify that both Telnet and SSH are processing in a listening state. In the above image, both ports 22 (SSH) and 23 (Telnet) can be observed on the list with their state listed as "LISTEN."
 
-### Capturing & Analyzing Telnet Traffic
+## Capturing & Analyzing Telnet Traffic
 
 Now that I know both SSH and Telnet are running, I can begin the process of capturing their network traffic. I will utilize two separate terminals for this phase: one for packet capturing and the other for viewing connections.
 
@@ -44,7 +44,7 @@ sudo tshark -r telnet.pcap -q -z follow,tcp,ascii,0 | grep -A 20 -i "Password"
 
 From the image above, we can see a vertical string of alphanumeric characters displayed in response to the executed command. The letters and special characters seen between the 1s represent my cleartext password (Passw0rd!). This is an example of why using Telnet or any other unencrypted protocol is ill-advised. In reality, if a malicious actor were to have an entity's IP address and begin capturing traffic on an insecure port, they would have the same opportunity to capture user login credentials. This is why it's best practice to use a secure alternative such as SSH.
 
-### Capturing & Analyzing SSH Traffic
+## Capturing & Analyzing SSH Traffic
 
 Now let's see what SSH traffic looks like when captured:
 
@@ -67,6 +67,6 @@ sudo tshark -r ssh.pcap -q -z follow,tcp,ascii,0 | more
 
 There are some noticeable differences with this command to read the pcap file, including the inability to specify to Tshark to look for the term "Password." Since the SSH protocol is encrypted, I have to pipe (|) and just use more instead. In the image above, the output is indeed in ciphertext and not human-readable.
 
-### Conclusion
+## Conclusion
 
 …And that brings me to the end of Project 4. The purpose of this project was to provide a clear example of why it's best practice to not only avoid using cleartext protocols but to disable them by default to harden a system's attack surface and also to display the advantage of using encrypted protocols as a secure alternative. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
