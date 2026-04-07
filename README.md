@@ -100,6 +100,7 @@ Users can control how fast Nmap scans hosts for open ports. The fast Nmap runs, 
 * T3 (default)
 * T4 (Aggressive)
 * T5 (Insane)
+
 The lower the number the slower the scan, but the stealthy we are and the lower the risk of being detected. Vice versa with the higher numbered parameters and also the risk of a system crash. In the above example, I run an aggressive Nmap scan (-T4) against the skillsetlocal.com host as well as using the “-A” parameter. The -A parameter combines various scan types together to provide us with highly detailed information about the target.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-3/Project%203%20-%20Step%2018.png)
