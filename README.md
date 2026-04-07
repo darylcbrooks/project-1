@@ -7,7 +7,7 @@ In this project, I focus on discovering and remediating file inclusion vulnerabi
 
 I will be automating the process of discovering these vulnerabilities by utilizing a PHP static code analyzer to perform scans on PHP scripts.
 
-### Scan For RFI Vulnerabilities Using A PHP Static Code Analyzer
+## Scan For RFI Vulnerabilities Using A PHP Static Code Analyzer
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-15/Project%2015%20-%20Step%2001.png)
 
@@ -29,7 +29,7 @@ Anytime the process of discovering vulnerabilities in code can be automated, it 
 
 Observe the bottom-center of the image above. There are 333 lines of code in this one PHP script. It could take several hours for an individual to manually locate file inclusion vulnerabilities, and even then, oversights are possible. Automating the discovery of these vulnerabilities with predefined rulesets reduces this time from hours to seconds.
 
-### Creating A New File Inclusion Ruleset
+## Creating A New File Inclusion Ruleset
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-15/Project%2015%20-%20Step%2005.png)
 
@@ -49,7 +49,7 @@ I delete all the rules above “<rule ref=”Security.BadFunctions.EasyRFI”/>�
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-15/Project%2015%20-%20Step%2008.png)
 
-### Scanning An Entire Directory w/ The New File Inclusion Ruleset
+## Scanning An Entire Directory w/ The New File Inclusion Ruleset
 
 Now I use the following command to execute the PHP static code analyzer again — this time with the modified ruleset (lfi_only) scanning an entire directory (/var/www/html/) for vulnerabilities:
 
@@ -87,6 +87,6 @@ To verify that the vulnerability has been remediated, I run a custom Python scri
 
 The script returns a message stating that the LFI attempt failed, meaning my remediation was successful!
 
-### Conclusion
+## Conclusion
 
 The purpose of this project was to convey the dangers of file inclusion attacks, demonstrate how they work, and show the remediation measures that can be taken when they are found. Automate vulnerability analysis where possible, but always be prepared to verify findings manually and/or with secondary tools. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
