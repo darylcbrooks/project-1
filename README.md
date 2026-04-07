@@ -5,7 +5,7 @@
 
 While continuing my exploration with packet analysis, in this project I will be taking a different approach. This time, I will be using the command‑based tool Hping to generate network traffic and Tcpdump to scan various types of packets for comparison and contrast. However, before diving into that, I also wanted to revisit the Nmap tool to demonstrate some additional practical uses for it.
 
-### Saving Nmap Output in Different Formats
+## Saving Nmap Output in Different Formats
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-10/Project%2010%20-%20Step%2001.png)
 
@@ -23,7 +23,7 @@ The second format option at my disposal is XML (Extensible Markup Language). XML
 
 The final option I can use to save Nmap output is the grepable format. A grepable format is a specialized text structure designed for easy parsing by command‑line tools such as “grep,” “awk,” “sed,” and “cut.” It lists each host’s information (IP, status, port details) on a single consistent line, making it ideal for filtering network scan results or performing log analysis without writing complex scripts. To output Nmap results in this format, the “-oG” parameter must be added to the command along with the file name to save the results to. In the above example, I run another Nmap scan against the same target host and tell Nmap to save the output in a grepable format to a file named “grepable_format” (nmap 192.168.1.101 -oG grepable_format). We can see that compared to the “normal” format, all the same details are captured but in two rows, ordered numerically from least to greatest.
 
-### Nmap SYN and Non-ICMP Scans
+## Nmap SYN and Non-ICMP Scans
 
 Before moving further with my Nmap scans, I want to switch to a more restricted user account to demonstrate why elevated privileges are sometimes required. Instead of switching back to the normal Kali user account, I’m taking this opportunity to also demonstrate how to create a new user on Kali Linux.
 
@@ -43,7 +43,7 @@ I use “sudo su,” which switches me back to the root account after providing 
 
 Before moving on to Hping, there is one last Nmap scan type I want to cover. Normally, when Nmap begins scanning, it sends an ICMP packet to the target host to check if it’s online. ICMP packets are what allow us to ping devices running on a network. This can be problematic for an ethical hacker if stealth is required, as several security controls (IDS, IPS, SIEM tools, etc.) can detect and log ICMP activity. To avoid this, there is a way to run an Nmap scan without pinging the target. By adding the “-Pn” parameter, Nmap skips sending ICMP packets altogether. The example above shows this in action, where I run Nmap with the “-Pn” parameter and still receive output regarding the open ports on the target host (nmap -Pn 192.168.1.101).
 
-### Generating Network Traffic w/ Hping
+## Generating Network Traffic w/ Hping
 
 Hping is a command‑line utility for assembling and analyzing TCP/IP packets. This packet‑crafting tool supports various protocols including TCP, UDP, and ICMP, and allows manipulation of multiple values in a TCP/IP header such as window size, packet size, and time‑to‑live (TTL). Among its many uses, Hping can be used for: 
 
@@ -62,7 +62,7 @@ The latest version, Hping3, is scriptable, enabling penetration testers and prog
 
 Starting Hping only requires the user to type and execute the version of Hping installed on the system. I’m using Hping version 3, so I simply type “hping3” to start the tool. Since this was just an example, I type “exit” to return to the Kali CLI.
 
-## SYN Packet Generation and Port Scanning w/ Hping
+### SYN Packet Generation and Port Scanning w/ Hping
 
 I’ve already demonstrated how to conduct a SYN scan with Nmap, so now let’s see how it’s done using Hping.
 
@@ -86,7 +86,7 @@ Back in the terminal running Tcpdump, I press Ctrl + C to stop the packet captur
 
 Hping can also scan multiple ports at once. The “-8” parameter in the following command tells Hping to scan TCP ports 0–100: hping3 -8 0–100 -S 192.168.1.101. The output shows the ports and protocols in use and the types of packets sent and received. Unlike the previous single‑port SYN scan, this one returns “A Flags” (ACK packets), indicating which ports responded. The TCP handshake still doesn’t complete, as we are not acknowledging the responses.
 
-## ACK Packet Generation w/ Hping
+### ACK Packet Generation w/ Hping
 
 I can also use ACK packets to check whether a host or its ports are active. This starts in the second phase of the TCP three‑way handshake, and the target should send an acknowledgment packet in response.
 
@@ -102,7 +102,7 @@ In the second terminal, I use the following command to send an ACK packet to por
 
 Returning to the Tcpdump terminal, I press Ctrl + C to stop the capture and then view the results (cat ack_scan). On the first line, we see a packet represented by a simple “.” with “ack” shown next to it in lowercase, indicating that the ACK packet was successfully sent and captured. A few lines down, another packet contains an “R Flag.” Technically, an ACK should have been returned, but the absence of one is likely due to the first step of the TCP handshake never occurring.
 
-## UDP Packet Generation w/ Hping
+### UDP Packet Generation w/ Hping
 
 UDP ports (connectionless protocols) can also be scanned with Hping.
 
@@ -118,6 +118,6 @@ In another terminal, I generate SNMP traffic with: sudo hping3 -2 192.168.1.101 
 
 Back in the Tcpdump terminal, I press Ctrl + C and view the output (cat udp_scan). At the end of the first line under “cat udp_scan,” there is a message stating that there’s nothing to parse.
 
-### Conclusion
+## Conclusion
 
 Using Hping in conjunction with Tcpdump provided great insight into how the TCP three‑way handshake can be used in various ways to detect running hosts and open ports. This project also demonstrated the various formats Nmap scans can be saved in and highlighted the importance of user privileges when running certain scans. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
