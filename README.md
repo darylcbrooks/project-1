@@ -5,7 +5,7 @@
 
 Welcome to the walkthrough of my first vulnerability scanning project. The primary tool that I'll be using throughout it is OpenVAS, which is a free and open-source vulnerability scanning tool. I'll be conducting a credentialed vulnerability scan of a single port of the targeted host. This will also include me demonstrating how to configure known credentials in OpenVAS, how to specify the details of the machine that I'm targeting, how to initiate the vulnerability scan, and finally how to analyze the results.
 
-### Starting Up OpenVAS on My Local System
+## Starting Up OpenVAS on My Local System
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-11/Project%2011%20-%20Step%2001.png)
 
@@ -23,7 +23,7 @@ Now the Docker container should be hosting OpenVAS over port 443. I'm able to re
 
 My arrival at OpenVAS' login page verifies that everything has been properly initiated. I provide it with my login credentials (username: admin, password: admin).
 
-### Configuring SSH Credentials
+## Configuring SSH Credentials
 
 The type of vulnerability testing that I will be conducting during this project is known as "white-box testing." In the real world, this would be where a client has already provided me with the system information necessary to configure the scanner, saving the time that system recon and enumeration would usually take up.
 
@@ -35,7 +35,7 @@ To start things off, I'm going to first provide OpenVAS with the credentials nec
 
 The next page starts off fairly empty since currently there aren't any credentials being stored in OpenVAS. To add the ones that I need, I start by clicking the small blue star highlighted in the upper leftmost corner. This will bring up a menu that will ask for the details. I'm going to name this set of credentials "SSH credentials" and leave a comment simply stating "SSH credentials for target vulnerable-host." Next, I'm going to leave the Type as its default value of "Username + Password" since that is what I'll be providing, and I'll also leave the two radio boxes alone as well. Lastly, I enter the SSH credentials (username: msfadmin, password: msfadmin) and click the green "create" button to store the credentials.
 
-### Adding Targets
+## Adding Targets
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-11/Project%2011%20-%20Step%2006.png)
 
@@ -45,7 +45,7 @@ Back at the very top, I click the "Configuration" menu again, but this time choo
 
 As before, I click the blue star in the upper leftmost corner of the window to bring up the menu that I need to enter the system details into. I'm going to name the target "Vulnerable Host" and add a comment stating "Target with IP address 192.168.1.100." I include this same IP address next to the selected "Manual" radio box in the "Hosts" section (please disregard the 172.17.0.1 address placed there in error). From here, I'm going to skip down to the "Credentials for authenticated check" section and in the dropdown menu next to "SSH" choose the name of the stored credentials that I made in the previous step ("SSH credentials") and also specify the port as 22 (SSH's default port). Having provided all the necessary information about my target, I click the green "create" button.
 
-### Initiating The Scan
+## Initiating The Scan
 
 Now it's time to begin scanning our target host, but before I begin, there are a few details that I need to provide OpenVAS about the scan itself.
 
@@ -61,7 +61,7 @@ Similar to before, I need to click the blue star icon in the leftmost corner of 
 
 At the bottom of the page, we can see my "First Scan" that I just created, and to initiate it, I click the green play button under the "Actions" column. This scan will take approximately twenty minutes to complete. So, I'm going to skip ahead a bit to the results.
 
-### Viewing The Scan Results
+## Viewing The Scan Results
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-11/Project%2011%20-%20Step%2011.png)
 
@@ -75,7 +75,7 @@ There's only one option here for me to choose, but if there were multiple scans 
 
 In this project, I'm not going to go down the rabbit hole of comparing the OpenVAS severity with the CVSS score; however, I provide an example of the details that a report shows. In the example above, we can see the exact nature of the vulnerability along with its severity and even the related ports.
 
-### Verifying Scan Results w/ Linpeas
+## Verifying Scan Results w/ Linpeas
 
 It's always best practice to use multiple scanning tools to compare and contrast results. In this next phase of my project, I'm going to use a tool called Linpeas, which is going to inform me of the likelihood of a privilege escalation vector.
 
@@ -100,6 +100,6 @@ To initiate Linpeas, I simply type and execute the following command: "./linpeas
 
 Unfortunately, I wasn't able to find any details to correlate with my OpenVAS scanning results. I would probably need to use another GUI-based scanning tool (such as Nessus) to compare the results to; however, I don't want to drift too far away from the scope of this project. That sounds like a great idea for a future project though… 🤔
 
-### Conclusion
+## Conclusion
 
 In this project, we were able to see how the open-source tool OpenVAS can be used to conduct credentialed vulnerability scanning of a secure protocol and some of the means of analysis at our disposal. Also, we saw how we could use a command-line-based tool such as Linpeas to verify some of the initial findings in our first scan. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
