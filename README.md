@@ -27,7 +27,7 @@ I right‑click the “test.txt” document that’s saved on my Desktop and sel
 
 From the four tabs located at the top of the Properties menu, I select the “Details” tab. This represents the metadata/resource stream. We can see information such as file size, creation date, owner, etc.
 
-### Hiding A File Within The Resource Stream
+## Hiding A File Within The Resource Stream
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-9/Project%209%20-%20Step%2006.png)
 
@@ -57,6 +57,6 @@ To prove my point, I add the text “This is visible” to “test.txt,” save 
 
 To view “secret.txt” and its contents — now well hidden in a resource stream — I type the following command in the Command Prompt window: “notepad test.txt:secret.txt.”
 
-### Conclusion
+## Conclusion
 
 From this demonstration, we can see that it’s fairly easy for someone to hide files (malicious or benign) in a resource stream. To prevent files from being hidden in an NTFS Alternate Data Stream, using PowerShell commands like “Get-Item -Stream *” and “Remove-Item -Stream” can help detect and remove them. Other methods include using third-party tools such as EventSentry or Sysinternals Streams, using the “dir /r” CLI command to view them, and ensuring security software is set to scan for ADS. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
