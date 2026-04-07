@@ -5,7 +5,7 @@
 
 This will be the first half of my project, where I explore different obfuscation techniques designed to protect the confidentiality of information. So, what exactly is obfuscation? It’s the deliberate act of making code, data, or communication difficult to understand and analyze. Encryption and encoding are two very popular methods of obfuscation. So, let’s dive in and explore some specific methods of obfuscation and how they work:
 
-### Steganography With Steghide
+## Steganography With Steghide
 
 The first obfuscation method I explore in this project is steganography, which is the concealment of information within computer files. In the example below, I’m going to use an application known as Steghide to hide written communication behind an image file.
 
@@ -25,7 +25,7 @@ The following command uses the Steghide application to extract any hidden data f
 
 Now that the hidden.txt file has been saved to my local working directory, I’m going to use the cat command to display its contents to see if the image file was hiding anything (cat hidden.txt). It appears that it was hiding the word “Steganography.” This was a very simplistic example of how steganography works, but in reality, insider threats such as employees colluding in a fraudulent scheme, can use file transfers with images like this to hide their communications by using unorthodox channels that aren’t as easy to trace.
 
-### Symmetric Encryption With OpenSSL
+## Symmetric Encryption With OpenSSL
 
 Next, I’ll be exploring different symmetric algorithms that can be used to obfuscate plain text documents behind ciphertext. Symmetric encryption uses a single key to both encrypt and decrypt data. It’s considered less secure than asymmetric encryption; however, it’s also regarded as more efficient due to utilizing less processing power.
 
@@ -95,7 +95,7 @@ Last but certainly not least, I use OpenSSL to decrypt (openssl enc -d -aes-256-
 
 Now that I’ve decrypted the contents of aes-cbc.enc and saved them in the aes-cbc.txt text file, I use the cat command to display the cleartext (cat aes-cbc.txt), which returns a value of “Cryptography.”
 
-### Conclusion
+## Conclusion
 
 This concludes part 1 of my obfuscation project. Hopefully, this has provided a better understanding of how steganography and symmetric encryption work. Specifically with symmetric encryption, we can see that there are a variety of algorithms to choose from, all with inherent strengths and weaknesses. However, it is strongly recommended to use algorithms in the AES family due to their overall strength, as the others showcased in this project are legacy technologies. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
 
