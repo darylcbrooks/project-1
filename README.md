@@ -5,7 +5,7 @@
 
 In this project, I will be demonstrating practical ways scripting is used in cybersecurity. The two languages that I will be utilizing are Python and Bash. Using these languages can help automate simple tasks and reduce the time it takes for an analyst to complete some of the redundant tasks associated with their role.
 
-### Analyzing A Custom Python-Based Port Scanning Script
+## Analyzing A Custom Python-Based Port Scanning Script
 
 Python is a versatile interpreted programming language known for its emphasis on readability, modularity, and code reuse. Its syntax is fairly simple, human-readable, and is one of the easier programming languages to learn. Let’s take a look at a custom Python-based port scanner to better understand how the language is leveraged to perform enumeration tasks.
 
@@ -45,7 +45,7 @@ Based on the results, the script ran successfully. It detected that ports 21 (FT
 
 Now that I’ve completed this phase of my project, I want to delete the Python script. To do this, I execute the “rm” command followed by the filename (“rm port_scan.py”). My operating system asks me to confirm the deletion, and I provide a “y” response.
 
-### Creating A Bash Script to Ping a Targeted Host
+## Creating A Bash Script to Ping a Targeted Host
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-13/Project%2013%20-%20Step%2005.png)
 
@@ -101,6 +101,6 @@ This tells the script that if the return value of the previous command ($?) is 0
 
 Testing the script again, we can see that the results are the same as before, but now the custom message “Host 192.168.1.101 is up!” appears at the end.
 
-### Conclusion
+## Conclusion
 
 These are just a few examples of how scripts can simplify and automate routine tasks. My Python script can be expanded to scan multiple IP addresses, and the Bash script can be modified to ping an entire subnet to identify active hosts. These enhancements can save a cybersecurity analyst valuable time when beginning any type of engagement. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
