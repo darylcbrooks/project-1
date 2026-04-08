@@ -35,7 +35,7 @@ Next, I set the default iptables policies to DROP for INPUT and FORWARD, and ACC
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-25/Project%2025%20-%20Step%2006.png)
 
-I set the following rules:
+I apply the following rules:
 
 * sudo iptables -P FORWARD DROP — to drop forwarded packets
 * sudo iptables -P OUTPUT ACCEPT — to allow outgoing packets
