@@ -73,13 +73,13 @@ This instructs Fail2Ban to ignore this system’s IP address and any IP on the e
 
 Scrolling to the “sshd” section, I add the following settings to prevent SSH brute‑force attacks by banning IPs after three failed login attempts within five minutes:
 
-enabled = true
-filter = sshd
-logpath = /var/log/auth.log
-maxretry = 3
-findtime = 300
-bantime = 28800
-ignoreip = 127.0.0.1
+* enabled = true
+* filter = sshd
+* logpath = /var/log/auth.log
+* maxretry = 3
+* findtime = 300
+* bantime = 28800
+* ignoreip = 127.0.0.1
 
 To save my changes, I press Ctrl+X, hit “Y”, and then press Enter.
 
