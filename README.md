@@ -132,7 +132,7 @@ Back in the Windows Start menu, I open the Control Panel again.
 
 I navigate to the Programs section to view all installed software.
 
-![Image](https://github.com/darylcbrooks/project-1/blob/project-28/Project%2028%20-%20Step%2023.png)\
+![Image](https://github.com/darylcbrooks/project-1/blob/project-28/Project%2028%20-%20Step%2023.png)
 
 From this list, I determine whether any outdated, unused, or suspicious applications need to be uninstalled. After reviewing it, I determine that everything looks legitimate and up to date. Another recommended step is to review all plug-ins and third-party extensions used by installed web browsers to ensure they are safe and updated.
 
