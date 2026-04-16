@@ -92,7 +92,7 @@ Nmap can be used to enumerate details about a target host’s operating system. 
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-3/Project%203%20-%20Step%2017.png)
 
-Users can control how fast Nmap scans hosts for open ports. The fast Nmap runs, the easier it is for it to be detected. Also, running Nmap at its fastest speed can potentially crash the target system, so we must be careful in how we use these speed parameters. The “T” parameter is what enables us to control the speed of the scans. The speed parameters that we can use on the command line are as follows (from slowest to fastest):
+Users can control how fast Nmap scans hosts for open ports. The faster Nmap runs, the easier it is for it to be detected. Also, running Nmap at its fastest speed can potentially crash the target system, so we must be careful in how we use these speed parameters. The “T” parameter is what enables us to control the speed of the scans. The speed parameters that we can use on the command line are as follows (from slowest to fastest):
 
 * T0 (paranoid)
 * T1 (sneaky)
