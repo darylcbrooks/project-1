@@ -3,7 +3,7 @@
 
 ### [Project 30 - Extracting and Analyzing Malicious Traffic with T Shark](https://youtu.be/wLkS5D6QSxY)
 
-This project will be a follow-up to a previous one where I covered basic functions of the TShark packet analysis tool. This time around, I’ll be demonstrating more advanced usage for TShark and how it can be an essential asset to a cybersecurity analyst.
+This project will be a follow-up to a previous one where I covered basic functions of the TShark packet analysis tool (https://github.com/darylcbrooks/project-1/blob/project-4/README.md). This time around, I’ll be demonstrating more advanced usage for TShark and how it can be an essential asset to a cybersecurity analyst.
 
 ## Filtering Network Traffic
 
