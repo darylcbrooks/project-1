@@ -71,4 +71,4 @@ Finally, I restart Suricata to ensure that the configuration changes take effect
 
 ## Conclusion
 
-Intrusion detection and prevention systems are critical security controls required for advanced network threat monitoring; however, misconfigurations can render them useless. Verifying and testing proper configuration prior to deployment is vital to ensuring that an IDS/IPS is an effective contribution to an enterprise's defense-in-depth strategy.
+Intrusion detection and prevention systems are critical security controls required for advanced network threat monitoring; however, misconfigurations can render them useless. Verifying and testing proper configuration prior to deployment is vital to ensuring that an IDS/IPS is an effective contribution to an enterprise's defense-in-depth strategy. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
