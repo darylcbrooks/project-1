@@ -32,6 +32,7 @@ I enter the following code into the empty C script file:
 int main() {
     system("/bin/sh");
 }
+
 This code will spawn a root shell upon execution. Line 1 declares the main function, while line 2 is what actually spawns the shell, and line 3 closes the function. To save the changes, I press Ctrl+X, hit Y, and then press Enter.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-38/Project%2038%20-%20Step%2006.png)
