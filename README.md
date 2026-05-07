@@ -158,4 +158,4 @@ The Deployment Image Servicing and Management (DISM) scanner is a powerful tool 
 
 ## Conclusion
 
-These are just a few post‑incident steps that system administrators can take to review and harden an enterprise’s attack surface. Already having security controls in place — such as recurring security audits, strong UAC policies, strong inbound firewall rules, and advanced Windows security settings, will greatly reduce the risk of being breached in the first place. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
+These are just a few post‑incident steps that system administrators can take to review and harden an enterprise’s attack surface. Already having security controls in place, such as recurring security audits, strong UAC policies, strong inbound firewall rules, and advanced Windows security settings, will greatly reduce the risk of being breached in the first place. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
