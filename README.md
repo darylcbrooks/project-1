@@ -3,7 +3,7 @@
 
 ### [Project 39 - Isolating Compromised Users and Hardening Active Directory Security 🛡️](https://youtu.be/veXF9fXKgiQ)
 
-Scenario: As a Windows system administrator working for "V Corp", senior SOC staff have provided me with details in regards to a detected insider threat collaborating with the well-known APT group, better known as "The Boys". Though the attempted network breach targeting V Corp's supply chain has been contained, I'm tasked with removing the originating workstation from the enterprise network to prevent any further damage and to investigate Active Directory for any vulnerabilities that require immediate remediation. However, I must hurry as our SUPER important board of directors, "The Seven" expect a full report including implemented remediation measures by their next meeting!
+Scenario: As a Windows system administrator working for "V Corp", senior SOC staff have provided me with details in regards to a detected insider threat collaborating with the well-known APT group, better known as "The Boys". Though the attempted network breach targeting V Corp's supply chain has been contained, I'm tasked with removing the originating workstation from the enterprise network to prevent any further damage and to investigate Active Directory for any vulnerabilities that require immediate remediation. However, I must hurry as our SUPER important board of directors, "The Seven" expect a full report including implemented remediation measures by their next meeting and I don't want to end up like the last guy...
 
 In this project, I’ll be demonstrating how a system administrator can isolate a compromised workstation and user account from a simulated enterprise and harden Windows Active Directory settings to prevent future attacks.
 
@@ -158,4 +158,6 @@ The Deployment Image Servicing and Management (DISM) scanner is a powerful tool 
 
 ## Conclusion
 
-These are just a few post‑incident steps that system administrators can take to review and harden an enterprise’s attack surface. Already having security controls in place, such as recurring security audits, strong UAC policies, strong inbound firewall rules, and advanced Windows security settings, will greatly reduce the risk of being breached in the first place. You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
+These are just a few post‑incident steps that system administrators can take to review and harden an enterprise’s attack surface. Already having security controls in place, such as recurring security audits, strong UAC policies, strong inbound firewall rules, and advanced Windows security settings, will greatly reduce the risk of being breached in the first place.Now, for that report! With results like these, I just may be able to keep my job...and my life! 
+
+You can watch the video walkthrough of this same project at the top of page. Until next time, take care of yourself and…SHOW YOUR WORK!!! 😉
