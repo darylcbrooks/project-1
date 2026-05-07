@@ -3,7 +3,7 @@
 
 ### [Project 39 - Isolating Compromised Users and Hardening Active Directory Security 🛡️](https://youtu.be/veXF9fXKgiQ)
 
-Scenario: As a Windows system administrator working for VCorp Inc., senior SOC staff have provided me with details regarding a recent network breach. Though the threat has been contained, I’m tasked with removing the originating workstation from the enterprise network to prevent any further damage and to investigate Active Directory for any vulnerabilities that require immediate remediation.
+Scenario: As a Windows system administrator working for "V Corp", senior SOC staff have provided me with details in regards to a detected insider threat collaborating with the well-known APT group, better known as "The Boys".  Though the attempted network breach has been contained, I'm tasked with removing the originating workstation from the enterprise network to prevent any further damage and to investigate Active Directory for any vulnerabilities that require immediate remediation. However, I must hurry as our super board of directors, "The Seven" expect a full report including implemented remediation measures by their next meeting!
 
 In this project, I’ll be demonstrating how a system administrator can isolate a compromised workstation and user account from a simulated enterprise and harden Windows Active Directory settings to prevent future attacks.
 
