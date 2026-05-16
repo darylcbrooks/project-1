@@ -1,7 +1,7 @@
 ### Click Header Image or Project Title to Watch The Video
-[![Watch the video](https://img.youtube.com/vi/5HNo6dLb7EU/maxresdefault.jpg)](https://youtu.be/5HNo6dLb7EU)
+[![Watch the video](https://img.youtube.com/vi/SSNZbetnv_E/maxresdefault.jpg)](https://youtu.be/SSNZbetnv_E)
 
-### [Project 45 - Remediating Vulnerabilities Found with OpenVAS and Nessus Scanners 🔍](https://youtu.be/5HNo6dLb7EU)
+### [Project 45 - Remediating Vulnerabilities Found with OpenVAS and Nessus Scanners 🔍](https://youtu.be/SSNZbetnv_E)
 
 In this project, I will be conducting a mock vulnerability “grey box” assessment. A grey box security assessment is when a client provides analysts with some system information about their target. In this instance, I know the operating system and login credentials of my target host (192.168.100.202). First, I’ll use the OpenVAS scanner on the target address and then verify those results by running another scan against the same IP address using the Nessus vulnerability scanner.
 
