@@ -9,7 +9,8 @@ In this project, I’ll be deconstructing a piece of malware using various tools
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-46/Project%2046%20-%20Step%2001.png)
 
-To initiate the OpenVAS application from the Linux CLI, I run the following command: “sudo gvm-start.”
+I begin by searching for and opening PowerShell. I switch to the Desktop directory where the “crypto.exe” malware file is located (cd .\Desktop) and use the following command to extract and save all printable strings from it into a text document named “crypto.txt”:
+strings.exe .\crypto.exe > crypto.txt.
 
 ![Image](https://github.com/darylcbrooks/project-1/blob/project-46/Project%2046%20-%20Step%2002.png)
 
